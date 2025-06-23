@@ -3,3 +3,5 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<leader><leader>", "<leader>fF", { remap = true, desc = "Find file from project root" })
+vim.keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save buffer" })
+vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>a", { desc = "Save buffer" })
