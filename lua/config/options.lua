@@ -4,5 +4,8 @@
 
 local opt = vim.opt
 
+opt.title = true
+opt.titlestring = "Project: " .. vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
+
 opt.number = true
 opt.relativenumber = false
